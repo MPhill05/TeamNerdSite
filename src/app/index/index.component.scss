@@ -2,7 +2,13 @@
     display: table;
     width: 100%;
     padding: 0 20%;
-    box-shadow: inset 0 0 100px #000;
+    box-shadow: inset 0 0 100px #000; 
+    background: url(../../assets/code.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 100%;
 }
 
 .cover-text {
@@ -10,11 +16,42 @@
     color: white;
     display: table-cell;
     vertical-align: middle;
+    h3, span {
+        vertical-align: bottom;
+    }
 }
 
 .cover-text h1 {
     margin: 0;
     font-size: 70px;
+    text-shadow: 5px 5px 3px #000;
+}
+
+.btn {
+  background: #3498db;
+  background-image: -webkit-linear-gradient(top, #05c4b4, #2980b9);
+  background-image: -moz-linear-gradient(top, #05c4b4, #2980b9);
+  background-image: -ms-linear-gradient(top, #05c4b4, #2980b9);
+  background-image: -o-linear-gradient(top, #05c4b4, #2980b9);
+  background-image: linear-gradient(to bottom, #05c4b4, #2980b9);
+  -webkit-border-radius: 28;
+  -moz-border-radius: 28;
+  border-radius: 28px;
+  font-family: Arial;
+  color: #ffffff;
+  font-size: 20px;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background: #3cb0fd;
+  background-image: -webkit-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -moz-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -ms-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -o-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
+  text-decoration: none;
 }
 
 hr {
@@ -24,6 +61,9 @@ hr {
 .about {
     background: white;
     height: auto;
+    h4 {
+        text-align: center;
+    }
 }
 
 .SEO, .analytics, .speed {
@@ -32,10 +72,12 @@ hr {
     margin-left: auto;
     margin-right: auto;
     display: block;
+    box-shadow: 5px 5px 5px #888888;
 }
 
 .projects {
     background-color: #05c4b4;
+    box-shadow: inset 0 0 100px #000;
 }
 
 .boombox, .barber, .msdos {
@@ -47,7 +89,7 @@ hr {
 }
 
 .testimonials {
-    background: #222;
+    background: #292929;
 }
 
 .testimonials h2 {
@@ -106,16 +148,41 @@ h2 {
     margin: auto;
     right: 0;
     left: 0;
+    border-radius: 25px;
+    padding: 20px;
+    .btn {
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+    }
+}
+
+.form-control {
+    background: transparent;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #05c4b4;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 0px;
+}
+
+.subscribe {
+    padding-top: 15px;
 }
 
 /* Media Queries */
 
-@media only screen and ( max-width : 568px ) {
+@media only screen and ( max-width : 849px ) {
     h1 {
         font-size: 40px;
     }
     section {
         padding: 20px;
+    }
+    blockquote {
+        text-align: center;
     }
 }
 
