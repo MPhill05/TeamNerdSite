@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { AppComponent } from './app.component';
 import { ContactComponent } from './contact/contact.component';
@@ -11,7 +12,9 @@ import { MarkComponent } from './mark/mark.component';
 import { ProjectsComponent } from './projects/projects.component';
 import { AppRoutingModule } from './app-routing.module';
 import { DropdownDirective } from './shared/dropdown.directive';
-import { SidebarModule } from 'ng-sidebar';
+import { SidenavComponent } from './sidenav/sidenav.component';
+
+import { MdButtonModule, MdCardModule, MdMenuModule, MdToolbarModule, MdIconModule } from '@angular/material';
 
 @NgModule({
   declarations: [
@@ -23,12 +26,18 @@ import { SidebarModule } from 'ng-sidebar';
     IndexComponent,
     MarkComponent,
     ProjectsComponent,
-    DropdownDirective
+    DropdownDirective,
+    SidenavComponent    
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    SidebarModule.forRoot()
+    BrowserAnimationsModule,
+    MdButtonModule,
+    MdMenuModule,
+    MdCardModule,
+    MdToolbarModule,
+    MdIconModule
   ],
   providers: [],
   bootstrap: [AppComponent]

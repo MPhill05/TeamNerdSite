@@ -16,8 +16,12 @@
     color: white;
     display: table-cell;
     vertical-align: middle;
-    h3, span {
+    span {
+        position: absolute;
         vertical-align: bottom;
+        bottom: 30px;
+        margin-left: auto;
+        margin-right: auto;
     }
 }
 
@@ -78,6 +82,11 @@ hr {
 .projects {
     background-color: #05c4b4;
     box-shadow: inset 0 0 100px #000;
+    .btn {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
 
 .boombox, .barber, .msdos {
@@ -123,7 +132,7 @@ blockquote cite {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    height: 500px;
+    height: 65%;
     h2, label {
         color: #05c4b4;
     }
@@ -146,6 +155,7 @@ h2 {
     width: 60%;
     position: absolute;
     margin: auto;
+    margin-top: -70px;
     right: 0;
     left: 0;
     border-radius: 25px;
@@ -183,6 +193,15 @@ h2 {
     }
     blockquote {
         text-align: center;
+    }
+    
+    .contact {
+        height: 100%;
+    }
+    
+    .contactForm {
+        margin-top: 0;
+        padding: inherit;
     }
 }
 
