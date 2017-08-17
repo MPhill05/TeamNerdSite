@@ -27,7 +27,7 @@ import { MdButtonModule, MdCardModule, MdMenuModule, MdToolbarModule, MdIconModu
     MarkComponent,
     ProjectsComponent,
     DropdownDirective,
-    SidenavComponent    
+    SidenavComponent
   ],
   imports: [
     BrowserModule,

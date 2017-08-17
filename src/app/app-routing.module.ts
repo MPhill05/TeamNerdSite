@@ -18,7 +18,7 @@ const appRoutes: Routes = [
     { path: 'mark', component: MarkComponent },
     { path: 'projects', component: ProjectsComponent },
     { path: 'index', component: IndexComponent }
-    
+
 ];
 
 @NgModule({
