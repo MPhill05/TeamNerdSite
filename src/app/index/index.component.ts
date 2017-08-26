@@ -1,4 +1,8 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
+import {NgModule} from '@angular/core';
+import {BrowserModule} from '@angular/platform-browser';
+import {FormsModule} from '@angular/forms';
+import {EmailService} from '../services/email/email.service';
 
 @Component({
   selector: 'app-index',
@@ -6,10 +10,23 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./index.component.scss']
 })
 export class IndexComponent implements OnInit {
+  protected name;
+  protected email;
+  protected subject;
+  protected message;
+  protected subscribe;
 
-  constructor() { }
+  constructor(private emailService: EmailService) {}
 
   ngOnInit() {
+  }
+
+  public sendEmail() {
+    this.emailService.sendEmail(this.name, this.email, this.subject, this.message, this.subscribe).then((data) => {
+
+    }).catch((error) => {
+
+    });  
   }
 
 }

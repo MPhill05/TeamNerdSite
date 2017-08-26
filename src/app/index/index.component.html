@@ -84,22 +84,22 @@
 <section class="contact">
     <div class="col-md-6 contactForm">
         <h2>Contact Us!</h2>
-        <form action="mailto:mphill05@gmail.com" method="post" enctype="text/plain">
+        <form (submit)="sendEmail()" method="post" enctype="text/plain">
             <fieldset class="form-group">
-                <input type="name" class="form-control" id="name" name="name" placeholder="Full Name">
+                <input [(ngModel)]="name" class="form-control" id="name" name="name" placeholder="Full Name">
             </fieldset>
             <fieldset class="form-group">
-                <input type="email" class="form-control" id="email" name="email" placeholder="Email">
+                <input [(ngModel)]="email" type="email" class="form-control" id="email" name="email" placeholder="Email">
             </fieldset>
             <fieldset class="form-group">
-                <input type="subject" class="form-control" id="subject" name="subject" placeholder="Subject">
+                <input [(ngModel)]="subject" class="form-control" id="subject" name="subject" placeholder="Subject">
             </fieldset>
             <fieldset class="form-group">
-                <textarea class="form-control" id="content" name="message" placeholder="Message"></textarea>
+                <textarea [(ngModel)]="message" class="form-control" id="content" name="message" placeholder="Message"></textarea>
             </fieldset>
             <div title="subscribeButton">
                 <div class="subscribe">
-                    <input type="checkbox" value="None" id="subscribe" name="check" checked />
+                    <input type="checkbox" value="None" [(ngModel)]="subscribe" id="subscribe" name="check" checked />
                     <label for="subscription">Stay up to date with us!</label>
                 </div>
             </div>
