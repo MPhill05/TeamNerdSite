@@ -10,11 +10,11 @@ import {EmailService} from '../services/email/email.service';
   styleUrls: ['./index.component.scss']
 })
 export class IndexComponent implements OnInit {
-  protected name;
-  protected email;
-  protected subject;
-  protected message;
-  protected subscribe;
+  public name;
+  public email;
+  public subject;
+  public message;
+  public subscribe;
 
   constructor(private emailService: EmailService) {}
 

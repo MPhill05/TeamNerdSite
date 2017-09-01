@@ -10,14 +10,14 @@ import { ProjectsComponent } from './projects/projects.component';
 import { IndexComponent } from './index/index.component';
 
 const appRoutes: Routes = [
-    { path: '', redirectTo: '/index', pathMatch: 'full' },
+    { path: '', redirectTo: '/', pathMatch: 'full' },
     { path: 'contact', component: ContactComponent },
     { path: 'footer', component: FooterComponent },
     { path: 'header', component: HeaderComponent },
     { path: 'grant', component: GrantComponent },
     { path: 'mark', component: MarkComponent },
     { path: 'projects', component: ProjectsComponent },
-    { path: 'index', component: IndexComponent }
+    { path: '', component: IndexComponent }
 
 ];
 

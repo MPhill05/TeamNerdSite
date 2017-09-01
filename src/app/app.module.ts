@@ -18,6 +18,7 @@ import {FormsModule} from '@angular/forms';
 import {EmailService} from './services/email/email.service';
 import {AppConstants} from './app.constants';
 import {MdButtonModule, MdCardModule, MdMenuModule, MdToolbarModule, MdIconModule} from '@angular/material';
+import 'hammerjs';
 
 @NgModule({
   declarations: [
