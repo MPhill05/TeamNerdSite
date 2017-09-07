@@ -6,6 +6,16 @@ body{
 overflow-x:hidden;
 }
 
+section {
+  position: relative;
+  z-index: 0;
+}
+
+.response {
+  color: wheat;
+  text-align: center;
+}
+
 img {
   display: block;
   max-width: 100%;
@@ -15,6 +25,10 @@ img {
 @media(max-width: 768px) {
 	#featured-text {
 	  font-size: 16vw;
+	}
+	.cover-text * {
+		position: relative;
+		z-index: 1;
 	}
 }
 

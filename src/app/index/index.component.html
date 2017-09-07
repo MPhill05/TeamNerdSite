@@ -6,6 +6,8 @@
 		<button class="btn">Contact Us!</button>
 		<br> <span class="caret"></span>
 	</div>
+	<div style="height: 200px">
+	</div>
 </div>
 
 <section class="about">
@@ -113,7 +115,7 @@
 <section class="contact container">
 	<div class="contactForm">
 		<h2>Contact Us!</h2>
-		<form (submit)="sendEmail()" method="post" enctype="text/plain">
+		<form (submit)="sendEmail()" method="post" enctype="text/plain" *ngIf="!isSubscribed">
 			<fieldset class="form-group">
 				<input [(ngModel)]="name" class="form-control" id="name" name="name"
 					placeholder="Full Name">
@@ -139,5 +141,7 @@
 			</div>
 			<button type="submit" id="submit" class="btn btn-primary">Submit</button>
 		</form>
+		<h1 *ngIf="isSubscribed" class="response">THANK YOU</h1>
+		<h1 *ngIf="isSubscribed == null" class="response">AN ERROR HAS OCCURRED.  PLEASE REFRESH THE PAGE AND TRY AGAIN</h1>
 	</div>
 </section>

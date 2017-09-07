@@ -3,6 +3,7 @@ import {NgModule} from '@angular/core';
 import {BrowserModule} from '@angular/platform-browser';
 import {FormsModule} from '@angular/forms';
 import {EmailService} from '../services/email/email.service';
+import { MaterialModule } from '@angular/material';
 
 @Component({
   selector: 'app-index',
@@ -15,18 +16,21 @@ export class IndexComponent implements OnInit {
   public subject;
   public message;
   public subscribe;
+  public isSubscribed;
 
-  constructor(private emailService: EmailService) {}
+  constructor(private emailService: EmailService) {
+    this.isSubscribed = false;
+  }
 
   ngOnInit() {
   }
 
   public sendEmail() {
     this.emailService.sendEmail(this.name, this.email, this.subject, this.message, this.subscribe).then((data) => {
-
+      this.isSubscribed = true;
     }).catch((error) => {
-
-    });  
+      this.isSubscribed = null;
+    });
   }
 
 }
