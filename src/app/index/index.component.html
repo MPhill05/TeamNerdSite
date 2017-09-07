@@ -3,14 +3,14 @@
 		<h1 id="featured-text">PhillStack</h1>
 		<hr>
 		<p class="lead">Mobile &amp; Web Development</p>
-		<button class="btn">Contact Us!</button>
-		<br> <span class="caret"></span>
+		<button scrollTo scrollTargetSelector="#contactUs" class="btn">Contact Us!</button>
+		<br> <a scrollTo href="#whatWeDo"><span class="caret" style="color: white"></span></a>
 	</div>
 	<div style="height: 200px">
 	</div>
 </div>
 
-<section class="about">
+<section class="about" id="whatWeDo">
 	<div class="container">
 		<h2>What we can build for you</h2>
 		<div class="col-xs-12 col-md-4">
@@ -112,7 +112,7 @@
 	</div>
 </section>
 
-<section class="contact container">
+<section class="contact container" id="contactUs">
 	<div class="contactForm">
 		<h2>Contact Us!</h2>
 		<form (submit)="sendEmail()" method="post" enctype="text/plain" *ngIf="!isSubscribed">

@@ -1,2 +1,32 @@
 
-<img src="../../assets/tempPhillstackLogo.svg" style="height: 100px; width: 200px;" alt="">
+<img src="../../assets/tempPhillstackLogo.svg" style="height: 100px; width: 200px;" alt="Phillstack Logo">
+
+<div id="toggle" (click)="toggleNav()" [class.toggled]="navToggle === true">
+	<ul>
+		<li><a href="#" >
+            <span class="line l1"></span><span class="line l2"></span>
+            <span class="line l3"></span>
+        </a></li>
+	</ul>
+</div>
+
+<section id="full-screen-nav" class="panel" [class.active]="navToggle === true">
+	<nav id="nav">
+		<ul>
+			<li><a href="#">Blog
+					<span class="desc">What are we up to?</span>
+				</a>
+			</li>
+			<li>
+				<a href="#">Grant
+					<span class="desc">Dev Guru</span>
+				</a>
+			</li>
+			<li>
+				<a href="#">Mark
+					<span class="desc">Dude with a macbook who has coding software installed</span>
+				</a>
+			</li>
+		</ul>
+	</nav>
+</section>  

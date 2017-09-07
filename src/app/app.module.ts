@@ -14,6 +14,7 @@ import {AppRoutingModule} from './app-routing.module';
 import {DropdownDirective} from './shared/dropdown.directive';
 import {SidenavComponent} from './sidenav/sidenav.component';
 import {FormsModule} from '@angular/forms';
+import {ScrollToModule} from 'ng2-scroll-to';
 
 import {EmailService} from './services/email/email.service';
 import {AppConstants} from './app.constants';
@@ -43,7 +44,8 @@ import 'hammerjs';
     MdMenuModule,
     MdCardModule,
     MdToolbarModule,
-    MdIconModule
+    MdIconModule,
+    ScrollToModule.forRoot()
   ],
   providers: [EmailService, AppConstants],
   bootstrap: [AppComponent]
