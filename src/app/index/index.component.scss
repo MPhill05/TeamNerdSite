@@ -22,6 +22,17 @@ img {
   height: auto;
 }
 
+.arrow {
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  margin-left:-20px;
+  width: 40px;
+  height: 40px;
+  background-image: url(../../assets/arrow.png);
+  background-size: contain;
+}
+
 @media(max-width: 768px) {
 	#featured-text {
 	  font-size: 16vw;
