@@ -10,3 +10,14 @@
         width: 23px;
     }
 }
+
+@media only screen and ( max-width : 849px ) {
+    #footerSocials {
+        padding: 3px;
+        img {
+            width: 20px;
+            height: 35px;
+            padding-top: 10px;
+        }
+    }
+}
