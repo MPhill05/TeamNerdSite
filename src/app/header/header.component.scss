@@ -4,6 +4,8 @@ img {
     left: 0;
     position: fixed;
     z-index: 0;
+    outline : none;
+    cursor: pointer;
 }
 
 a, a:active, a:focus{
@@ -11,6 +13,7 @@ a, a:active, a:focus{
 	outline: none;
 	transition: all .2s ease;
 }
+
 h1{
     font-weight: 900;
     font-size: 32px;

@@ -1,3 +1,16 @@
+html, body{
+height:100%;
+}
+
+body{
+overflow-x:hidden;
+}
+
+section {
+  position: relative;
+  z-index: 0;
+}
+
 .cover {
     display: table;
     width: 100%;
@@ -31,8 +44,39 @@ hr {
     width: 48%;
 }
 
+.arrow {
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    margin-left:-20px;
+    width: 40px;
+    height: 40px;
+    background-image: url(../../assets/arrow.png);
+    background-size: contain;
+}
+
+@media(max-width: 768px) {
+	#featured-text {
+	  font-size: 16vw;
+	}
+	.cover-text * {
+		position: relative;
+		z-index: 1;
+	}
+}
+
+@media(min-width: 769px) {
+	.cover {
+		padding: 0 20%;
+	}
+}
+
 .about {
-    height: 100%;
+    background: white;
+    height: auto;
+    h4 {
+        text-align: center;
+    }
 }
 
 .leftSide {
