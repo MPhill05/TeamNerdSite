@@ -51,9 +51,8 @@
 					duo. This site was made with a focus on keeping the design minimal
 					&amp; functional, and so that any fan of any age could explore the
 					site with ease.</p>
-				<a href="http://www.boomboxcartel.com"
-					style="text-decoration: none;" target="_blank"><button
-						type="button" class="btn btn-primary">View Project</button></a>
+				<a href="http://www.boomboxcartel.com" style="text-decoration: none;" target="_blank">    <button type="button" class="btn btn-primary">View Project</button>
+				</a>
 			</div>
 		</div>
 		<br>
@@ -71,7 +70,8 @@
 					match that, but we wanted to make sure the tech matched his goals.
 					We improved the speed of Reco's site by converting it to Angular,
 					and incorporated analytics and SEO to help boost his business.</p>
-				<a href="http://www.recodiamond.com" style="text-decoration: none;" target="_blank"><button type="button" class="btn btn-primary">View Project</button></a>
+				<a href="http://www.recodiamond.com" style="text-decoration: none;" target="_blank">       <button type="button" class="btn btn-primary">View Project</button>
+				</a>
 			</div>
 		</div>
 		<br>
@@ -87,8 +87,9 @@
 					site was to have an "MS-DOS" feel and to act as a secure login for
 					specific clients. Though you can't see much, trust that there is a
 					lot of taking place under the hood.</p>
-				<a href="http://www.q7b2r39mx.com/" target="_blank"><button
-						type="button" class="btn btn-primary">View Project</button></a>
+				<a href="http://www.q7b2r39mx.com/" style="text-decoration: none;" target="_blank">
+                    <button type="button" class="btn btn-primary">View Project</button>
+                </a>
 			</div>
 		</div>
 	</div>
@@ -117,19 +118,19 @@
 		<form (submit)="sendEmail()" method="post" enctype="text/plain" *ngIf="!isSubscribed">
 			<fieldset class="form-group">
 				<input [(ngModel)]="name" class="form-control" id="name" name="name"
-					placeholder="Full Name">
+					placeholder="Full Name" required>
 			</fieldset>
 			<fieldset class="form-group">
 				<input [(ngModel)]="email" type="email" class="form-control"
-					id="email" name="email" placeholder="Email">
+					id="email" name="email" placeholder="Email" required>
 			</fieldset>
 			<fieldset class="form-group">
 				<input [(ngModel)]="subject" class="form-control" id="subject"
-					name="subject" placeholder="Subject">
+					name="subject" placeholder="Subject" required>
 			</fieldset>
 			<fieldset class="form-group">
 				<textarea [(ngModel)]="message" class="form-control" id="content"
-					name="message" placeholder="Message"></textarea>
+					name="message" placeholder="Message" required></textarea>
 			</fieldset>
 			<div title="subscribeButton">
 				<div class="subscribe">
@@ -141,6 +142,6 @@
 			<button type="submit" id="submit" class="btn btn-primary">Submit</button>
 		</form>
 		<h1 *ngIf="isSubscribed" class="response">THANK YOU</h1>
-		<h1 *ngIf="isSubscribed == null" class="response">AN ERROR HAS OCCURRED.  PLEASE REFRESH THE PAGE AND TRY AGAIN</h1>
+		<h1 *ngIf="isSubscribed == undefined" class="response">AN ERROR HAS OCCURRED. PLEASE REFRESH THE PAGE AND TRY AGAIN</h1>
 	</div>
 </section>
