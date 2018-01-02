@@ -39,6 +39,20 @@
 <section class="projects">
 	<div class="container">
 		<h2>Some of our previous projects</h2>
+		<div class="row" id="Coffi">
+			<div class="col-xs-12 col-md-6">
+				<img class="coffi" src="../../assets/CoffiX.png"
+					alt="Coffi">
+			</div>
+			<div class="col-xs-12 col-md-6">
+				<h3>Coffi</h3>
+				<h5>iOS App</h5>
+				<p>Coffi is an iPhone app built natively in Swift for the working professional and student. The app allows users to find nearby coffee shops and see previous ratings and comments for each shop.</p>
+				<a href="#" style="text-decoration: none;" target="_blank">    <button type="button" class="btn btn-primary">Coming Soon</button>
+				</a>
+			</div>
+		</div>
+		<br>
 		<div class="row">
 			<div class="col-xs-12 col-md-6">
 				<img class="boombox" src="../../assets/boomboxcartelsite.png"
@@ -121,8 +135,16 @@
 					placeholder="Full Name" required>
 			</fieldset>
 			<fieldset class="form-group">
-				<input [(ngModel)]="email" type="email" class="form-control"
-					id="email" name="email" placeholder="Email" required>
+				<input 
+				[(ngModel)]="email" 
+				type="email" 
+				class="form-control"
+				id="email" 
+				name="email" 
+				placeholder="Email" 
+				pattern="[a-zA-Z0-9!#$%&amp;'*+\/=?^_`{|}~.-]+@[a-zA-Z0-9-]+(\.[a-zA-Z0-9-]+)*" 
+				required
+				>
 			</fieldset>
 			<fieldset class="form-group">
 				<input [(ngModel)]="subject" class="form-control" id="subject"
@@ -142,6 +164,6 @@
 			<button type="submit" id="submit" class="btn btn-primary">Submit</button>
 		</form>
 		<h1 *ngIf="isSubscribed" class="response">THANK YOU</h1>
-		<h1 *ngIf="isSubscribed == undefined" class="response">AN ERROR HAS OCCURRED. PLEASE REFRESH THE PAGE AND TRY AGAIN</h1>
+<!--		<h1 *ngIf="isSubscribed == null" class="response">AN ERROR HAS OCCURRED. PLEASE REFRESH THE PAGE AND TRY AGAIN</h1>-->
 	</div>
 </section>

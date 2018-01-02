@@ -146,12 +146,18 @@ hr {
     }
 }
 
-.boombox, .barber, .msdos {
+ .boombox, .barber, .msdos {
     height: auto;
     width: auto;
     margin-left: auto;
     margin-right: auto;
     display: block;
+}
+
+.coffi {
+    height: 550px;
+    width: auto;
+    margin: auto;
 }
 
 .testimonials {
